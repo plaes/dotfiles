@@ -70,12 +70,14 @@ local layouts =
 }
 -- }}}
 
+theme.wallpaper = awful.util.getdir("config") .. "/themes/awesome-wallpaper.jpg"
+
 -- {{{ Wallpaper
--- if beautiful.wallpaper then
---     for s = 1, screen.count() do
---         gears.wallpaper.maximized(beautiful.wallpaper, s, true)
---     end
--- end
+if beautiful.wallpaper then
+    for s = 1, screen.count() do
+        gears.wallpaper.maximized(beautiful.wallpaper, s, true)
+    end
+end
 -- }}}
 
 -- {{{ Tags

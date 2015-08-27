@@ -1,0 +1,16 @@
+" <Ctrl-l> redraws the screen and removes any search highlighting.
+nnoremap <silent> <C-l> :nohl<CR><C-l>
+
+:set expandtab
+:set tabstop=4
+:set shiftwidth=4
+:set ignorecase
+:set smartcase
+
+" Custom colorscheme for vimdiff \o/
+if &diff
+    highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=Blue gui=none guifg=bg guibg=Red
+    highlight DiffDelete cterm=bold ctermfg=10  ctermbg=Red gui=none guifg=bg guibg=Red
+    highlight DiffChange cterm=bold ctermfg=Black ctermbg=White gui=none guifg=bg guibg=Red
+    highlight DiffText   cterm=bold ctermfg=White ctermbg=Magenta gui=none guifg=bg guibg=Red
+endif

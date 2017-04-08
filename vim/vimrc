@@ -20,3 +20,8 @@ if &diff
     highlight DiffChange cterm=bold ctermfg=Black ctermbg=White gui=none guifg=bg guibg=Red
     highlight DiffText   cterm=bold ctermfg=White ctermbg=Magenta gui=none guifg=bg guibg=Red
 endif
+
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
+
+autocmd BufRead,BufNewFile   *.c,*.h,*.java,*.dts,*.dtsi set cin noexpandtab sw=8 ts=8

@@ -3,5 +3,20 @@ Hello,
 These are my public dotfiles. Feel free to use them for learning, but be
 warned, that they might not work for you.
 
+## VIM
+
+1. Initialize vundle:
+
+```
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/vim/bundle/Vundle.vim
+```
+
+2. Link vimrc to ~/.vimrc:
+
+```
+ln -sf vimrc ~/.vimrc
+```
+
+
 Päikest,
 Priit Laes :)

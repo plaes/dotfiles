@@ -15,9 +15,6 @@ call vundle#begin('~/.config/vim/bundle')
 Plugin 'VundleVim/Vundle.vim'
 " https://github.com/editorconfig/editorconfig-vim
 Plugin 'editorconfig/editorconfig-vim'
-" https://github.com/posva/vim-vue
-Plugin 'posva/vim-vue'
-
 
 call vundle#end()            " required
 filetype plugin indent on    " required
